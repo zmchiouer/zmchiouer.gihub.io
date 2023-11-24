@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cute;
+  font-size: 1em;
+}
+
+/* Style the header */
+header {
+  background-image: url(oujda_header.png);
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+ul {
+  border: 1px solid cornsilk;
+}
+
+li {
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: burlywood;
+  color: brown;
+}
+
+.active {
+  background-color: palegoldenrod;
+  color: orange;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 75%;
+  /* Full height */
+  position: relative;
+  /* Make it stick, even on scroll */
+  overflow: fixed;
+  /* Enable scrolling if the side nav has too much content */
+}
+
+img {
+  width: 20%;
+  float: right;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: play;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-image: url(oujda_footer.png);
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@font-face {
+  font-family: cute;
+  src: url(cute.otf);
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+  width: 20%;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*H section{
+    /*Equilibrar: flex;
+}*/
+/* Creat two columns/boxes that floats next to each other */
+nav {
+  /* H float: left;
+  width: 20%; */
+  /*height: 300px; only for demonstration, should be removed */
+  background: teal;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #352315;
+  display: flex;
+  /*H*/
+}
+
+nav ul li {
+  text-align: center;
+  border: 1px solid #555;
+  /*H*/
+  width: 20%;
+  /*H*/
+}
+
+article {
+  /* H float:left;
+  width: 80%; */
+  padding: 20px;
+  background-color: white;
+  display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {}
+  body {
+    background-color: whitesmoke;
+  }
